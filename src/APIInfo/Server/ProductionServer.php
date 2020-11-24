@@ -11,11 +11,11 @@ class ProductionServer implements APIServerInterface {
 	}
 
 	public function getPaymentRequestUrl(): string {
-		return 'https://uatopenapi.nationstrust.com:8243/ntb/vi.0.0/sense';
+		return 'https://coapi.nationstrust.com:8243/ntb/sense/1.0.0/common';
 	}
 
 	public function getPaymentReversalUrl(): string {
-		return 'https://uatopenapi.nationstrust.com:8243/ntb/vi.0.0/sense';
+		return 'https://coapi.nationstrust.com:8243/ntb/sense/1.0.0/common';
 	}
 
 	public function isRefundAllowed(int $unix_timestamp): bool {
